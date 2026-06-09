@@ -24,9 +24,8 @@ RL_final_project/
 │   │   ├── 📂 DQN_woReplayBuffer_vt/    # 無 Replay Buffer DQN 的日誌
 │   │   └── 📂 Qtransformer_woReplayBuffer_vt/ # Q-Transformer 的日誌
 │   ├── 📂 model/                        # 訓練完成的模型權重檔 (.pt / .pt 狀態字典)
-│   │   ├── 📂 DQN_woReplayBuffer_vt/    # 無 Replay Buffer DQN 模型權重
-│   │   └── 📂 Qtrans_woReplayBuffer_vt/ # Q-Transformer 模型權重
-│   └── 📂 image/                        # (需手動建立或運行腳本生成) 損益對比與獎勵圖表
+│       ├── 📂 DQN_woReplayBuffer_vt/    # 無 Replay Buffer DQN 模型權重
+│       └── 📂 Qtrans_woReplayBuffer_vt/ # Q-Transformer 模型權重
 │
 └── 📂 chat_log_with_AI /                # 與 AI 討論的對話記錄（PDF 格式，設計與 Debug 參考）
 ```
@@ -48,7 +47,6 @@ RL_final_project/
 存放所有模型訓練過程中的數據與權重。
 * **`log/`**：記錄每個 Episode 的總回報（Total Reward）、資產價值（Portfolio Value）及探索率（Epsilon），格式為 CSV，便於後續分析。
 * **`model/`**：存放訓練中表現最好（Best Model）以及最後一個 Episode（End Model）的 PyTorch 模型權重（`.pt` 檔案）。
-* **`image/`**：由 `draw_line_chart.py` 讀取 `log/` 中的數據後，繪製出的訓練與驗證曲線對比圖（如 DQN 有無 Replay Buffer 的效能對比）。
 
 ### 3. `chat_log_with_AI /` (AI 討論日誌)
 收集了專案開發過程中與 AI (ChatGPT/Gemini) 討論的技術 PDF 記錄。內容涵蓋：
