@@ -23,7 +23,7 @@ RL_final_project/
 │   ├── 📂 log/                          # 訓練與驗證的 CSV 日誌數據
 │   │   ├── 📂 DQN_woReplayBuffer_vt/    # 無 Replay Buffer DQN 的日誌
 │   │   └── 📂 Qtransformer_woReplayBuffer_vt/ # Q-Transformer 的日誌
-│   ├── 📂 model/                        # 訓練完成的模型權重檔 (.pt / .pt 狀態字典)
+│   └── 📂 model/                        # 訓練完成的模型權重檔 (.pt / .pt 狀態字典)
 │       ├── 📂 DQN_woReplayBuffer_vt/    # 無 Replay Buffer DQN 模型權重
 │       └── 📂 Qtrans_woReplayBuffer_vt/ # Q-Transformer 模型權重
 │
